@@ -2,7 +2,7 @@
   "name": "contentful-utils",
   "version": "1.0.0",
   "description": "A CLI tool for various content model related tasks on Contentful.",
-  "bin": "bin/cutils",
+  "bin": "bin/contentful-utils",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

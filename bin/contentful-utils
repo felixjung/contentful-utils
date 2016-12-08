@@ -9,9 +9,9 @@ const command = _.get(options, '_[0]');
 try {
   require(`./${command}`)(options);
 } catch(e) {
-  console.log(e);
   log.error(
-    `Could not find command ${command}. Run "cutils" to see available commands.`
+    `Could not find command ${command}. Run "contentful-utils" to see available commands.`
   );
+  console.log(e);
   process.exit(1);
 }
