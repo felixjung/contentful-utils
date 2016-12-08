@@ -1,0 +1,24 @@
+{
+  "name": "contentful-utils",
+  "version": "1.0.0",
+  "description": "A CLI tool for various content model related tasks on Contentful.",
+  "bin": "bin/cutils",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "contentful-management": "^1.3.0",
+    "lodash": "^4.17.2",
+    "npmlog": "^4.0.1",
+    "yargs": "^6.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.11.1",
+    "eslint-config-airbnb-base": "^10.0.1",
+    "eslint-formatter-pretty": "^1.1.0",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}

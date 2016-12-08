@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+const _ = require('lodash');
+const log = require('npmlog');
+const options = require('./../lib/options');
+
+const command = _.get(options, '_[0]');
+
+try {
+  require(`./${command}`)(options);
+} catch(e) {
+  console.log(e);
+  log.error(
+    `Could not find command ${command}. Run "cutils" to see available commands.`
+  );
+  process.exit(1);
+}
