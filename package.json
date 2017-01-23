@@ -4,7 +4,7 @@
   "description": "A CLI tool for various content model related tasks on Contentful.",
   "bin": "bin/contentful-utils",
   "scripts": {
-    "test": "xo",
+    "test": "xo"
   },
   "pre-commit": ["test"],
   "author": "Felix Jung <jung.felix@gmail.com>",
