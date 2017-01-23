@@ -28,5 +28,13 @@
   "xo": {
     "space": 2,
     "semicolon": false
+  },
+  "ava": {
+    "files": ["test/**/*.js"],
+    "source": [
+      "**/*.js",
+      "!test/**/*"
+    ],
+    "failFast": true
   }
 }
