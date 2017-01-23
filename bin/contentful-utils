@@ -1,33 +1,32 @@
 #!/usr/bin/env node
 
-const _ = require('lodash');
-const log = require('npmlog');
-const options = require('./../lib/options');
+const _ = require('lodash')
+const log = require('npmlog')
+const options = require('./../lib/options')
 
-const commands = ['delete-fields', 'copy-fields'];
-const command = _.get(options, '_[0]');
-const commandIsAvailable = isCommand(command);
+const commands = ['delete-fields', 'copy-fields']
+const command = _.get(options, '_[0]')
+const commandIsAvailable = isCommand(command)
 
 if (!commandIsAvailable) {
   const msg = [
     `Could not find command ${command}.`,
     'Run "contentful-utils" to see available commands.'
-  ].join(' ');
+  ].join(' ')
 
-  log.error(msg);
-  process.exit(1);
+  log.error(msg)
+  process.exit(1)
 }
 
-const path = `./../lib/sub-commands/${command}`;
+const path = `./../lib/sub-commands/${command}`
 
 try {
-  require(path)(options);
+  require(path)(options)
 } catch(e) {
-  log.error(`Could not load module '${path}'.`);
-  console.log(e);
-  process.exit(1);
+  console.log(e)
+  process.exit(1)
 }
 
 function isCommand(cmd, cmds = commands) {
-  return _.includes(cmds, cmd);
+  return _.includes(cmds, cmd)
 }
