@@ -42,7 +42,7 @@ Install globally using npm.
 
 ### Options
 
-contentful-utils have a bunch of global options, for example the `space`, as well as command specific options.
+contentful-utils have a bunch of global options, for example the `space`, as well as command specific options. All configuration flags can also be provided in a `config.json` passed on to contentful-utils using the `—config` flag.
 
 #### Global options
 
