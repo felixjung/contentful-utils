@@ -4,9 +4,11 @@
   "description": "A CLI tool for various content model related tasks on Contentful.",
   "bin": "bin/contentful-utils",
   "scripts": {
-    "test": "xo"
+    "test": "xo && ava"
   },
-  "pre-commit": ["test"],
+  "pre-commit": [
+    "test"
+  ],
   "author": "Felix Jung <jung.felix@gmail.com>",
   "license": "GPL-3.0",
   "dependencies": {
@@ -16,6 +18,7 @@
     "yargs": "^6.5.0"
   },
   "devDependencies": {
+    "ava": "^0.17.0",
     "pre-commit": "^1.2.2",
     "xo": "^0.17.1"
   },
