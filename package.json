@@ -10,7 +10,7 @@
     "test"
   ],
   "author": "Felix Jung <jung.felix@gmail.com>",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "dependencies": {
     "contentful-management": "^1.3.0",
     "lodash": "^4.17.2",
