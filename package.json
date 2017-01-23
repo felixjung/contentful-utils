@@ -1,14 +1,13 @@
 {
   "name": "contentful-utils",
-  "version": "1.0.0",
   "description": "A CLI tool for various content model related tasks on Contentful.",
   "bin": "bin/contentful-utils",
   "scripts": {
     "test": "xo && ava"
   },
-  "pre-commit": [
-    "test"
-  ],
+  "pre-commit": {
+    "silent": false
+  },
   "author": "Felix Jung <jung.felix@gmail.com>",
   "license": "MIT",
   "dependencies": {
@@ -22,19 +21,19 @@
     "pre-commit": "^1.2.2",
     "xo": "^0.17.1"
   },
-  "pre-commit": {
-    "silent": true
-  },
   "xo": {
     "space": 2,
     "semicolon": false
   },
   "ava": {
-    "files": ["test/**/*.js"],
+    "files": [
+      "test/**/*.js"
+    ],
     "source": [
       "**/*.js",
       "!test/**/*"
     ],
     "failFast": true
-  }
+  },
+  "version": "1.0.0"
 }
