@@ -6,7 +6,7 @@
 
 #### Copying fields
 
-Often times when working on your content model, you might want to create a field on a content type that should be configured exactly like on another content type. It should have the same required, localization and validation configuration. Unfortunately, Contentful currently does not support copying fields between content types. Wouldn't it be super useful to have a *master* content type that contains pre-configured fields that you can just copy over to a new content type you're working on? Now you can.
+Often times when working on your content model, you might want to create a field on one content type that should be configured exactly like on another content type. It should have the same required, localization, and validation configuration. Unfortunately, Contentful currently does not support copying fields between content types. Wouldn't it be super useful to have a *master* content type that contains pre-configured fields that you can just copy over to a new content type you're working on? Now you can.
 
 ```bash
 > contentful-utils copy-fields slug title \
@@ -42,7 +42,7 @@ Install globally using npm.
 
 ### Options
 
-contentful-utils have a bunch of global options, for example the `space`, as well as command specific options. All configuration flags can also be provided in a `config.json` passed on to contentful-utils using the `—config` flag.
+contentful-utils have a bunch of global options, for example the `space`, as well as command specific options. All configuration flags can also be provided in a `config.json` passed to contentful-utils using the `—config` flag.
 
 #### Global options
 
