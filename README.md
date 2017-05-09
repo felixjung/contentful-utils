@@ -4,6 +4,8 @@
 
 ### Examples
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/felixjung/contentful-utils.svg)](https://greenkeeper.io/)
+
 #### Copying fields
 
 Often times when working on your content model, you might want to create a field on one content type that should be configured exactly like on another content type. It should have the same required, localization, and validation configuration. Unfortunately, Contentful currently does not support copying fields between content types. Wouldn't it be super useful to have a *master* content type that contains pre-configured fields that you can just copy over to a new content type you're working on? Now you can.
