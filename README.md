@@ -22,8 +22,7 @@ This will copy the fields `slug` and `title` from your content type `blogPost` t
 Deleting fields from a content type can be a bit tedious on Contentful. When doing this from the frontend, you have to first disable the field in the editor and in responses, save the content type, delete the field and save, again. This takes precious time, when during an exploratory phase you might not need to be this cautious. Now you can delete a field with just one command.
 
 ```bash
-> contentful-utils copy-fields slug \
-  --source blogPost \
+> contentful-utils delete-fields slug \
   --target page \
   --config ~/Desktop/contentful-config.json
 ```
