@@ -21,7 +21,9 @@
     "pre-commit": "^1.2.2",
     "xo": "^0.17.1"
   },
-  "engines" : { "node" : ">=7.9" },
+  "engines": {
+    "node": ">=7.9"
+  },
   "xo": {
     "space": 2,
     "semicolon": false
@@ -36,5 +38,5 @@
     ],
     "failFast": true
   },
-  "version": "1.0.5"
+  "version": "2.0.0"
 }
