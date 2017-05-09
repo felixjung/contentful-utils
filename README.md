@@ -31,7 +31,7 @@ This will copy the field `slug` from your content type `blogPost` to the content
 
 ### Requirements
 
-contentful-utils tracks NodeJS stable to benefit for the latest language features. However, currently Node.js `v.6.x.x` should be sufficient.
+contentful-utils tracks NodeJS stable to benefit for the latest language features. Currently at v7.9.x
 
 ### Installation
 

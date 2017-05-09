@@ -21,6 +21,7 @@
     "pre-commit": "^1.2.2",
     "xo": "^0.17.1"
   },
+  "engines" : { "node" : ">=7.9" },
   "xo": {
     "space": 2,
     "semicolon": false
