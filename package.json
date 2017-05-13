@@ -3,6 +3,10 @@
   "description": "A CLI tool for various content model related tasks on Contentful.",
   "bin": "bin/contentful-utils",
   "scripts": {
+    "lint": "xo",
+    "lint:watch": "onchange './**/*.js' --initial -- xo",
+    "unit": "ava",
+    "unit:watch": "onchange './**/*.js' --initial -- ava",
     "test": "xo && ava"
   },
   "pre-commit": {
