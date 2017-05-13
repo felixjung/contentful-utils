@@ -3,6 +3,10 @@
   "description": "A CLI tool for various content model related tasks on Contentful.",
   "bin": "bin/contentful-utils",
   "scripts": {
+    "lint": "xo",
+    "lint:watch": "onchange './**/*.js' --initial -- xo",
+    "unit": "ava",
+    "unit:watch": "onchange './**/*.js' --initial -- ava",
     "test": "xo && ava"
   },
   "pre-commit": {
@@ -23,6 +27,7 @@
     "yargs": "^6.5.0"
   },
   "devDependencies": {
+    "onchange": "^3.2.1",
     "ava": "^0.17.0",
     "pre-commit": "^1.2.2",
     "xo": "^0.17.1"
