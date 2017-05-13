@@ -23,6 +23,7 @@
     "yargs": "^6.5.0"
   },
   "devDependencies": {
+    "onchange": "^3.2.1",
     "ava": "^0.17.0",
     "pre-commit": "^1.2.2",
     "xo": "^0.17.1"
