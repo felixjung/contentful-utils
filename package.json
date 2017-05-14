@@ -37,7 +37,10 @@
   },
   "xo": {
     "space": 2,
-    "semicolon": false
+    "semicolon": false,
+    "rules": {
+      "no-use-extend-native/no-use-extend-native": 0
+    }
   },
   "ava": {
     "files": [
